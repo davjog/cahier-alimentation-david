@@ -716,7 +716,7 @@
         "pensionT": "",
         "pensionTaries": "",
         "ration": "foin luzerne regain ",
-        "concentre": ""
+        "concentre": "Vl"
       },
       {
         "periode": "16 - 30 avril 2026",
@@ -725,7 +725,7 @@
         "pensionT": "",
         "pensionTaries": "",
         "ration": "herbe foin luzerne regain ",
-        "concentre": ""
+        "concentre": "Vl"
       },
       {
         "periode": "01 - 15 mai 2026",
@@ -734,25 +734,25 @@
         "pensionT": "",
         "pensionTaries": "",
         "ration": "herbe",
-        "concentre": ""
+        "concentre": "Vl"
       },
       {
         "periode": "16 - 31 mai 2026",
-        "vlT": "",
-        "vlTaries": "",
+        "vlT": "22",
+        "vlTaries": "0",
         "pensionT": "",
         "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
+        "ration": "Herbe",
+        "concentre": "Vl"
       },
       {
         "periode": "01 - 15 juin 2026",
-        "vlT": "",
-        "vlTaries": "",
+        "vlT": "22",
+        "vlTaries": "0",
         "pensionT": "",
         "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
+        "ration": "Herbe",
+        "concentre": "Vl"
       },
       {
         "periode": "16 - 30 juin 2026",
@@ -939,7 +939,7 @@
       },
       {
         "label": "Arrêt du foin VL au printemps",
-        "value": "30/06/2026",
+        "value": "30/05/2026",
         "hl": true
       },
       {
@@ -979,7 +979,7 @@
       },
       {
         "label": "Emmontagnée (>1500m d'altitude)",
-        "value": "",
+        "value": "8/06/2026",
         "hl": false
       },
       {
