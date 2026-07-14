@@ -760,8 +760,8 @@
         "vlTaries": "0",
         "pensionT": "",
         "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
+        "ration": "Herbe ",
+        "concentre": "Vl"
       },
       {
         "periode": "01 - 15 juillet 2026",
@@ -769,17 +769,17 @@
         "vlTaries": "2",
         "pensionT": "",
         "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
+        "ration": "Herbe ",
+        "concentre": "Vl"
       },
       {
         "periode": "16 - 31 juillet 2026",
-        "vlT": "",
-        "vlTaries": "",
+        "vlT": "19",
+        "vlTaries": "2",
         "pensionT": "",
         "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
+        "ration": "Herbe ",
+        "concentre": "Vl"
       },
       {
         "periode": "01 - 15 août 2026",
