@@ -783,12 +783,12 @@
       },
       {
         "periode": "01 - 15 août 2026",
-        "vlT": "",
-        "vlTaries": "",
+        "vlT": "19",
+        "vlTaries": "2",
         "pensionT": "",
         "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
+        "ration": "Herbe",
+        "concentre": "Vl"
       },
       {
         "periode": "16 - 31 août 2026",
@@ -1017,7 +1017,7 @@
       {
         "mois": "Juillet",
         "annee": 2026,
-        "litres": ""
+        "litres": "9471"
       },
       {
         "mois": "Août",
