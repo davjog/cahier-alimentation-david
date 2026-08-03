@@ -1,1091 +1,1096 @@
 {
-  "2024": {
-    "periodes": [
-      {
-        "periode": "01 - 15 avril 2024",
-        "vlT": "21",
-        "vlTaries": "3",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 30 avril 2024",
-        "vlT": "23",
-        "vlTaries": "1",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 mai 2024",
-        "vlT": "23",
-        "vlTaries": "1",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 31 mai 2024",
-        "vlT": "23",
-        "vlTaries": "1",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 juin 2024",
-        "vlT": "21",
-        "vlTaries": "3",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 30 juin 2024",
-        "vlT": "21",
-        "vlTaries": "3",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 juillet 2024",
-        "vlT": "24",
-        "vlTaries": "0",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 31 juillet 2024",
-        "vlT": "24",
-        "vlTaries": "0",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 août 2024",
-        "vlT": "24",
-        "vlTaries": "0",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 31 août 2024",
-        "vlT": "24",
-        "vlTaries": "0",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 septembre 2024",
-        "vlT": "24",
-        "vlTaries": "0",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 30 septembre 2024",
-        "vlT": "24",
-        "vlTaries": "0",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 octobre 2024",
-        "vlT": "18",
-        "vlTaries": "6",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 31 octobre 2024",
-        "vlT": "18",
-        "vlTaries": "6",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 novembre 2024",
-        "vlT": "15",
-        "vlTaries": "9",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 30 novembre 2024",
-        "vlT": "10",
-        "vlTaries": "14",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 décembre 2024",
-        "vlT": "8",
-        "vlTaries": "16",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 31 décembre 2024",
-        "vlT": "10",
-        "vlTaries": "14",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 janvier 2025",
-        "vlT": "17",
-        "vlTaries": "6",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 31 janvier 2025",
-        "vlT": "19",
-        "vlTaries": "4",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 14 février 2025",
-        "vlT": "21",
-        "vlTaries": "3",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 28 février 2025",
-        "vlT": "19",
-        "vlTaries": "4",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 mars 2025",
-        "vlT": "20",
-        "vlTaries": "3",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 31 mars 2025",
-        "vlT": "19",
-        "vlTaries": "4",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      }
-    ],
-    "dates": [
-      {
-        "label": "Mise à l'herbe VL",
-        "value": "29/04/2024",
-        "hl": true
-      },
-      {
-        "label": "Démontagnée (<1500m d'altitude)",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Arrêt du foin VL au printemps",
-        "value": "",
-        "hl": true
-      },
-      {
-        "label": "Stocks concentrés démontagnée",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Stocks sortie complète vaches (foin concentrés)",
-        "value": "",
-        "hl": true
-      },
-      {
-        "label": "Début distribution foin VL à l'automne",
-        "value": "9/11/2024",
-        "hl": true
-      },
-      {
-        "label": "Mise à l'herbe génisses",
-        "value": "29/06/2024",
-        "hl": true
-      },
-      {
-        "label": "Stocks rentrée vaches (concentrés)",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Mise à l'herbe autres espèces",
-        "value": "20/11/2024",
-        "hl": false
-      },
-      {
-        "label": "Rentrée étable VL",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Emmontagnée (>1500m d'altitude)",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Rentrée étable génisses",
-        "value": "20/112024",
-        "hl": false
-      },
-      {
-        "label": "Stocks concentrés Emmontagnée",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Rentrée étable autres espèces",
-        "value": "",
-        "hl": false
-      }
-    ],
-    "lait": [
-      {
-        "mois": "Avril",
-        "annee": 2024,
-        "litres": "11173"
-      },
-      {
-        "mois": "Mai",
-        "annee": 2024,
-        "litres": "12687"
-      },
-      {
-        "mois": "Juin",
-        "annee": 2024,
-        "litres": "11605"
-      },
-      {
-        "mois": "Juillet",
-        "annee": 2024,
-        "litres": "10502"
-      },
-      {
-        "mois": "Août",
-        "annee": 2024,
-        "litres": "9553"
-      },
-      {
-        "mois": "Septembre",
-        "annee": 2024,
-        "litres": "7838"
-      },
-      {
-        "mois": "Octobre",
-        "annee": 2024,
-        "litres": "6915"
-      },
-      {
-        "mois": "Novembre",
-        "annee": 2024,
-        "litres": "4349"
-      },
-      {
-        "mois": "Décembre",
-        "annee": 2024,
-        "litres": "5556"
-      },
-      {
-        "mois": "Janvier",
-        "annee": 2025,
-        "litres": "9106"
-      },
-      {
-        "mois": "Février",
-        "annee": 2025,
-        "litres": "9979"
-      },
-      {
-        "mois": "Mars",
-        "annee": 2025,
-        "litres": "11806"
-      }
-    ]
-  },
-  "2025": {
-    "periodes": [
-      {
-        "periode": "01 - 15 avril 2025",
-        "vlT": "19",
-        "vlTaries": "4",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "foin luzerne regain ",
-        "concentre": "vl"
-      },
-      {
-        "periode": "16 - 30 avril 2025",
-        "vlT": "18",
-        "vlTaries": "4",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "herbe foin luzerne regain ",
-        "concentre": "vl"
-      },
-      {
-        "periode": "01 - 15 mai 2025",
-        "vlT": "19",
-        "vlTaries": "4",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "herbe",
-        "concentre": "vl"
-      },
-      {
-        "periode": "16 - 31 mai 2025",
-        "vlT": "21",
-        "vlTaries": "2",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "01 - 15 juin 2025",
-        "vlT": "22",
-        "vlTaries": "1",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "16 - 30 juin 2025",
-        "vlT": "22",
-        "vlTaries": "1",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "01 - 15 juillet 2025",
-        "vlT": "22",
-        "vlTaries": "0",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "16 - 31 juillet 2025",
-        "vlT": "21",
-        "vlTaries": "1",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "01 - 15 août 2025",
-        "vlT": "21",
-        "vlTaries": "1",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "16 - 31 août 2025",
-        "vlT": "21",
-        "vlTaries": "1",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "01 - 15 septembre 2025",
-        "vlT": "22",
-        "vlTaries": "0",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "16 - 30 septembre 2025",
-        "vlT": "22",
-        "vlTaries": "0",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "01 - 15 octobre 2025",
-        "vlT": "17",
-        "vlTaries": "5",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "16 - 31 octobre 2025",
-        "vlT": "17",
-        "vlTaries": "5",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "01 - 15 novembre 2025",
-        "vlT": "17",
-        "vlTaries": "5",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "16 - 30 novembre 2025",
-        "vlT": "14",
-        "vlTaries": "6",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "01 - 15 décembre 2025",
-        "vlT": "13",
-        "vlTaries": "7",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "16 - 31 décembre 2025",
-        "vlT": "10",
-        "vlTaries": "10",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "01 - 15 janvier 2026",
-        "vlT": "12",
-        "vlTaries": "10",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "16 - 31 janvier 2026",
-        "vlT": "12",
-        "vlTaries": "10",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "01 - 14 février 2026",
-        "vlT": "15",
-        "vlTaries": "7",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "16 - 28 février 2026",
-        "vlT": "18",
-        "vlTaries": "4",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "01 - 15 mars 2026",
-        "vlT": "22",
-        "vlTaries": "0",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      },
-      {
-        "periode": "16 - 31 mars 2026",
-        "vlT": "20",
-        "vlTaries": "2",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": "vl"
-      }
-    ],
-    "dates": [
-      {
-        "label": "Mise à l'herbe VL",
-        "value": "25/4/2025",
-        "hl": true
-      },
-      {
-        "label": "Démontagnée (<1500m d'altitude)",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Arrêt du foin VL au printemps",
-        "value": "5/04/2025",
-        "hl": true
-      },
-      {
-        "label": "Stocks concentrés démontagnée",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Stocks sortie complète vaches (foin concentrés)",
-        "value": "100kg de vl",
-        "hl": true
-      },
-      {
-        "label": "Début distribution foin VL à l'automne",
-        "value": "25/10/2025",
-        "hl": true
-      },
-      {
-        "label": "Mise à l'herbe génisses",
-        "value": "26/04/2025",
-        "hl": true
-      },
-      {
-        "label": "Stocks rentrée vaches (concentrés)",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Mise à l'herbe autres espèces",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Rentrée étable VL",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Emmontagnée (>1500m d'altitude)",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Rentrée étable génisses",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Stocks concentrés Emmontagnée",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Rentrée étable autres espèces",
-        "value": "",
-        "hl": false
-      }
-    ],
-    "lait": [
-      {
-        "mois": "Avril",
-        "annee": 2025,
-        "litres": "10551"
-      },
-      {
-        "mois": "Mai",
-        "annee": 2025,
-        "litres": "11736"
-      },
-      {
-        "mois": "Juin",
-        "annee": 2025,
-        "litres": "11103"
-      },
-      {
-        "mois": "Juillet",
-        "annee": 2025,
-        "litres": "9948"
-      },
-      {
-        "mois": "Août",
-        "annee": 2025,
-        "litres": "8749"
-      },
-      {
-        "mois": "Septembre",
-        "annee": 2025,
-        "litres": "8078"
-      },
-      {
-        "mois": "Octobre",
-        "annee": 2025,
-        "litres": "7145"
-      },
-      {
-        "mois": "Novembre",
-        "annee": 2025,
-        "litres": "5545"
-      },
-      {
-        "mois": "Décembre",
-        "annee": 2025,
-        "litres": "6549"
-      },
-      {
-        "mois": "Janvier",
-        "annee": 2026,
-        "litres": "9485"
-      },
-      {
-        "mois": "Février",
-        "annee": 2026,
-        "litres": "9953"
-      },
-      {
-        "mois": "Mars",
-        "annee": 2026,
-        "litres": "13589"
-      }
-    ]
-  },
-  "2026": {
-    "periodes": [
-      {
-        "periode": "01 - 15 avril 2026",
-        "vlT": "20",
-        "vlTaries": "2",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "foin luzerne regain ",
-        "concentre": "Vl"
-      },
-      {
-        "periode": "16 - 30 avril 2026",
-        "vlT": "19",
-        "vlTaries": "2",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "herbe foin luzerne regain ",
-        "concentre": "Vl"
-      },
-      {
-        "periode": "01 - 15 mai 2026",
-        "vlT": "21",
-        "vlTaries": "0",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "herbe",
-        "concentre": "Vl"
-      },
-      {
-        "periode": "16 - 31 mai 2026",
-        "vlT": "21",
-        "vlTaries": "0",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "Herbe",
-        "concentre": "Vl"
-      },
-      {
-        "periode": "01 - 15 juin 2026",
-        "vlT": "21",
-        "vlTaries": "0",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "Herbe",
-        "concentre": "Vl"
-      },
-      {
-        "periode": "16 - 30 juin 2026",
-        "vlT": "21",
-        "vlTaries": "0",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "Herbe ",
-        "concentre": "Vl"
-      },
-      {
-        "periode": "01 - 15 juillet 2026",
-        "vlT": "19",
-        "vlTaries": "2",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "Herbe ",
-        "concentre": "Vl"
-      },
-      {
-        "periode": "16 - 31 juillet 2026",
-        "vlT": "19",
-        "vlTaries": "2",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "Herbe ",
-        "concentre": "Vl"
-      },
-      {
-        "periode": "01 - 15 août 2026",
-        "vlT": "19",
-        "vlTaries": "2",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "Herbe",
-        "concentre": "Vl"
-      },
-      {
-        "periode": "16 - 31 août 2026",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 septembre 2026",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 30 septembre 2026",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 octobre 2026",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 31 octobre 2026",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 novembre 2026",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 30 novembre 2026",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 décembre 2026",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 31 décembre 2026",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 janvier 2027",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 31 janvier 2027",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 14 février 2027",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 28 février 2027",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "01 - 15 mars 2027",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      },
-      {
-        "periode": "16 - 31 mars 2027",
-        "vlT": "",
-        "vlTaries": "",
-        "pensionT": "",
-        "pensionTaries": "",
-        "ration": "",
-        "concentre": ""
-      }
-    ],
-    "dates": [
-      {
-        "label": "Mise à l'herbe VL",
-        "value": "20/4/2026",
-        "hl": true
-      },
-      {
-        "label": "Démontagnée (<1500m d'altitude)",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Arrêt du foin VL au printemps",
-        "value": "30/05/2026",
-        "hl": true
-      },
-      {
-        "label": "Stocks concentrés démontagnée",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Stocks sortie complète vaches (foin concentrés)",
-        "value": "vl=0 ",
-        "hl": true
-      },
-      {
-        "label": "Début distribution foin VL à l'automne",
-        "value": "",
-        "hl": true
-      },
-      {
-        "label": "Mise à l'herbe génisses",
-        "value": "17/04/2026",
-        "hl": true
-      },
-      {
-        "label": "Stocks rentrée vaches (concentrés)",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Mise à l'herbe autres espèces",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Rentrée étable VL",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Emmontagnée (>1500m d'altitude)",
-        "value": "8/06/2026",
-        "hl": false
-      },
-      {
-        "label": "Rentrée étable génisses",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Stocks concentrés Emmontagnée",
-        "value": "",
-        "hl": false
-      },
-      {
-        "label": "Rentrée étable autres espèces",
-        "value": "",
-        "hl": false
-      }
-    ],
-    "lait": [
-      {
-        "mois": "Avril",
-        "annee": 2026,
-        "litres": "9515"
-      },
-      {
-        "mois": "Mai",
-        "annee": 2026,
-        "litres": "9331"
-      },
-      {
-        "mois": "Juin",
-        "annee": 2026,
-        "litres": "11596"
-      },
-      {
-        "mois": "Juillet",
-        "annee": 2026,
-        "litres": "9471"
-      },
-      {
-        "mois": "Août",
-        "annee": 2026,
-        "litres": ""
-      },
-      {
-        "mois": "Septembre",
-        "annee": 2026,
-        "litres": ""
-      },
-      {
-        "mois": "Octobre",
-        "annee": 2026,
-        "litres": ""
-      },
-      {
-        "mois": "Novembre",
-        "annee": 2026,
-        "litres": ""
-      },
-      {
-        "mois": "Décembre",
-        "annee": 2026,
-        "litres": ""
-      },
-      {
-        "mois": "Janvier",
-        "annee": 2027,
-        "litres": ""
-      },
-      {
-        "mois": "Février",
-        "annee": 2027,
-        "litres": ""
-      },
-      {
-        "mois": "Mars",
-        "annee": 2027,
-        "litres": ""
-      }
-    ]
-  },
-  "name": "Calendrier d'Alimentation Beaufort",
-  "short_name": "Beaufort",
-  "description": "Calendrier d'alimentation pour éleveurs Beaufort",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#f7f5f0",
-  "theme_color": "#2e7d45",
-  "lang": "fr",
-  "icons": [
-    {
-      "src": "./icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
+  "version": 1,
+  "savedAt": "2026-08-03T15:25:04.195Z",
+  "campagnes": {
+    "2024": {
+      "periodes": [
+        {
+          "periode": "01 - 15 avril 2024",
+          "vlT": "21",
+          "vlTaries": "3",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 30 avril 2024",
+          "vlT": "23",
+          "vlTaries": "1",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 mai 2024",
+          "vlT": "23",
+          "vlTaries": "1",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 31 mai 2024",
+          "vlT": "23",
+          "vlTaries": "1",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 juin 2024",
+          "vlT": "21",
+          "vlTaries": "3",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 30 juin 2024",
+          "vlT": "21",
+          "vlTaries": "3",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 juillet 2024",
+          "vlT": "24",
+          "vlTaries": "0",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 31 juillet 2024",
+          "vlT": "24",
+          "vlTaries": "0",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 août 2024",
+          "vlT": "24",
+          "vlTaries": "0",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 31 août 2024",
+          "vlT": "24",
+          "vlTaries": "0",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 septembre 2024",
+          "vlT": "24",
+          "vlTaries": "0",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 30 septembre 2024",
+          "vlT": "24",
+          "vlTaries": "0",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 octobre 2024",
+          "vlT": "18",
+          "vlTaries": "6",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 31 octobre 2024",
+          "vlT": "18",
+          "vlTaries": "6",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 novembre 2024",
+          "vlT": "15",
+          "vlTaries": "9",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 30 novembre 2024",
+          "vlT": "10",
+          "vlTaries": "14",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 décembre 2024",
+          "vlT": "8",
+          "vlTaries": "16",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 31 décembre 2024",
+          "vlT": "10",
+          "vlTaries": "14",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 janvier 2025",
+          "vlT": "17",
+          "vlTaries": "6",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 31 janvier 2025",
+          "vlT": "19",
+          "vlTaries": "4",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 14 février 2025",
+          "vlT": "21",
+          "vlTaries": "3",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 28 février 2025",
+          "vlT": "19",
+          "vlTaries": "4",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 mars 2025",
+          "vlT": "20",
+          "vlTaries": "3",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 31 mars 2025",
+          "vlT": "19",
+          "vlTaries": "4",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        }
+      ],
+      "dates": [
+        {
+          "label": "Mise à l'herbe VL",
+          "value": "29/04/2024",
+          "hl": true
+        },
+        {
+          "label": "Démontagnée (<1500m d'altitude)",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Arrêt du foin VL au printemps",
+          "value": "",
+          "hl": true
+        },
+        {
+          "label": "Stocks concentrés démontagnée",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Stocks sortie complète vaches (foin concentrés)",
+          "value": "",
+          "hl": true
+        },
+        {
+          "label": "Début distribution foin VL à l'automne",
+          "value": "9/11/2024",
+          "hl": true
+        },
+        {
+          "label": "Mise à l'herbe génisses",
+          "value": "29/06/2024",
+          "hl": true
+        },
+        {
+          "label": "Stocks rentrée vaches (concentrés)",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Mise à l'herbe autres espèces",
+          "value": "20/11/2024",
+          "hl": false
+        },
+        {
+          "label": "Rentrée étable VL",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Emmontagnée (>1500m d'altitude)",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Rentrée étable génisses",
+          "value": "20/112024",
+          "hl": false
+        },
+        {
+          "label": "Stocks concentrés Emmontagnée",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Rentrée étable autres espèces",
+          "value": "",
+          "hl": false
+        }
+      ],
+      "lait": [
+        {
+          "mois": "Avril",
+          "annee": 2024,
+          "litres": "11173"
+        },
+        {
+          "mois": "Mai",
+          "annee": 2024,
+          "litres": "12687"
+        },
+        {
+          "mois": "Juin",
+          "annee": 2024,
+          "litres": "11605"
+        },
+        {
+          "mois": "Juillet",
+          "annee": 2024,
+          "litres": "10502"
+        },
+        {
+          "mois": "Août",
+          "annee": 2024,
+          "litres": "9553"
+        },
+        {
+          "mois": "Septembre",
+          "annee": 2024,
+          "litres": "7838"
+        },
+        {
+          "mois": "Octobre",
+          "annee": 2024,
+          "litres": "6915"
+        },
+        {
+          "mois": "Novembre",
+          "annee": 2024,
+          "litres": "4349"
+        },
+        {
+          "mois": "Décembre",
+          "annee": 2024,
+          "litres": "5556"
+        },
+        {
+          "mois": "Janvier",
+          "annee": 2025,
+          "litres": "9106"
+        },
+        {
+          "mois": "Février",
+          "annee": 2025,
+          "litres": "9979"
+        },
+        {
+          "mois": "Mars",
+          "annee": 2025,
+          "litres": "11806"
+        }
+      ]
     },
-    {
-      "src": "./icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ],
-  "categories": [
-    "productivity",
-    "agriculture"
-  ]
+    "2025": {
+      "periodes": [
+        {
+          "periode": "01 - 15 avril 2025",
+          "vlT": "19",
+          "vlTaries": "4",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "foin luzerne regain ",
+          "concentre": "vl"
+        },
+        {
+          "periode": "16 - 30 avril 2025",
+          "vlT": "18",
+          "vlTaries": "4",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "herbe foin luzerne regain ",
+          "concentre": "vl"
+        },
+        {
+          "periode": "01 - 15 mai 2025",
+          "vlT": "19",
+          "vlTaries": "4",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "herbe",
+          "concentre": "vl"
+        },
+        {
+          "periode": "16 - 31 mai 2025",
+          "vlT": "21",
+          "vlTaries": "2",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "01 - 15 juin 2025",
+          "vlT": "22",
+          "vlTaries": "1",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "16 - 30 juin 2025",
+          "vlT": "22",
+          "vlTaries": "1",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "01 - 15 juillet 2025",
+          "vlT": "22",
+          "vlTaries": "0",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "16 - 31 juillet 2025",
+          "vlT": "21",
+          "vlTaries": "1",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "01 - 15 août 2025",
+          "vlT": "21",
+          "vlTaries": "1",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "16 - 31 août 2025",
+          "vlT": "21",
+          "vlTaries": "1",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "01 - 15 septembre 2025",
+          "vlT": "22",
+          "vlTaries": "0",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "16 - 30 septembre 2025",
+          "vlT": "22",
+          "vlTaries": "0",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "01 - 15 octobre 2025",
+          "vlT": "17",
+          "vlTaries": "5",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "16 - 31 octobre 2025",
+          "vlT": "17",
+          "vlTaries": "5",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "01 - 15 novembre 2025",
+          "vlT": "17",
+          "vlTaries": "5",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "16 - 30 novembre 2025",
+          "vlT": "14",
+          "vlTaries": "6",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "01 - 15 décembre 2025",
+          "vlT": "13",
+          "vlTaries": "7",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "16 - 31 décembre 2025",
+          "vlT": "10",
+          "vlTaries": "10",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "01 - 15 janvier 2026",
+          "vlT": "12",
+          "vlTaries": "10",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "16 - 31 janvier 2026",
+          "vlT": "12",
+          "vlTaries": "10",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "01 - 14 février 2026",
+          "vlT": "15",
+          "vlTaries": "7",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "16 - 28 février 2026",
+          "vlT": "18",
+          "vlTaries": "4",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "01 - 15 mars 2026",
+          "vlT": "22",
+          "vlTaries": "0",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        },
+        {
+          "periode": "16 - 31 mars 2026",
+          "vlT": "20",
+          "vlTaries": "2",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": "vl"
+        }
+      ],
+      "dates": [
+        {
+          "label": "Mise à l'herbe VL",
+          "value": "25/4/2025",
+          "hl": true
+        },
+        {
+          "label": "Démontagnée (<1500m d'altitude)",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Arrêt du foin VL au printemps",
+          "value": "5/04/2025",
+          "hl": true
+        },
+        {
+          "label": "Stocks concentrés démontagnée",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Stocks sortie complète vaches (foin concentrés)",
+          "value": "100kg de vl",
+          "hl": true
+        },
+        {
+          "label": "Début distribution foin VL à l'automne",
+          "value": "25/10/2025",
+          "hl": true
+        },
+        {
+          "label": "Mise à l'herbe génisses",
+          "value": "26/04/2025",
+          "hl": true
+        },
+        {
+          "label": "Stocks rentrée vaches (concentrés)",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Mise à l'herbe autres espèces",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Rentrée étable VL",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Emmontagnée (>1500m d'altitude)",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Rentrée étable génisses",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Stocks concentrés Emmontagnée",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Rentrée étable autres espèces",
+          "value": "",
+          "hl": false
+        }
+      ],
+      "lait": [
+        {
+          "mois": "Avril",
+          "annee": 2025,
+          "litres": "10551"
+        },
+        {
+          "mois": "Mai",
+          "annee": 2025,
+          "litres": "11736"
+        },
+        {
+          "mois": "Juin",
+          "annee": 2025,
+          "litres": "11103"
+        },
+        {
+          "mois": "Juillet",
+          "annee": 2025,
+          "litres": "9948"
+        },
+        {
+          "mois": "Août",
+          "annee": 2025,
+          "litres": "8749"
+        },
+        {
+          "mois": "Septembre",
+          "annee": 2025,
+          "litres": "8078"
+        },
+        {
+          "mois": "Octobre",
+          "annee": 2025,
+          "litres": "7145"
+        },
+        {
+          "mois": "Novembre",
+          "annee": 2025,
+          "litres": "5545"
+        },
+        {
+          "mois": "Décembre",
+          "annee": 2025,
+          "litres": "6549"
+        },
+        {
+          "mois": "Janvier",
+          "annee": 2026,
+          "litres": "9485"
+        },
+        {
+          "mois": "Février",
+          "annee": 2026,
+          "litres": "9953"
+        },
+        {
+          "mois": "Mars",
+          "annee": 2026,
+          "litres": "13589"
+        }
+      ]
+    },
+    "2026": {
+      "periodes": [
+        {
+          "periode": "01 - 15 avril 2026",
+          "vlT": "20",
+          "vlTaries": "2",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "foin luzerne regain ",
+          "concentre": "Vl"
+        },
+        {
+          "periode": "16 - 30 avril 2026",
+          "vlT": "19",
+          "vlTaries": "2",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "herbe foin luzerne regain ",
+          "concentre": "Vl"
+        },
+        {
+          "periode": "01 - 15 mai 2026",
+          "vlT": "21",
+          "vlTaries": "0",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "herbe",
+          "concentre": "Vl"
+        },
+        {
+          "periode": "16 - 31 mai 2026",
+          "vlT": "21",
+          "vlTaries": "0",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "Herbe",
+          "concentre": "Vl"
+        },
+        {
+          "periode": "01 - 15 juin 2026",
+          "vlT": "21",
+          "vlTaries": "0",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "Herbe",
+          "concentre": "Vl"
+        },
+        {
+          "periode": "16 - 30 juin 2026",
+          "vlT": "21",
+          "vlTaries": "0",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "Herbe ",
+          "concentre": "Vl"
+        },
+        {
+          "periode": "01 - 15 juillet 2026",
+          "vlT": "19",
+          "vlTaries": "2",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "Herbe ",
+          "concentre": "Vl"
+        },
+        {
+          "periode": "16 - 31 juillet 2026",
+          "vlT": "19",
+          "vlTaries": "2",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "Herbe ",
+          "concentre": "Vl"
+        },
+        {
+          "periode": "01 - 15 août 2026",
+          "vlT": "19",
+          "vlTaries": "2",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "Herbe",
+          "concentre": "Vl"
+        },
+        {
+          "periode": "16 - 31 août 2026",
+          "vlT": "19",
+          "vlTaries": "2",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 septembre 2026",
+          "vlT": "",
+          "vlTaries": "",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 30 septembre 2026",
+          "vlT": "",
+          "vlTaries": "",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 octobre 2026",
+          "vlT": "",
+          "vlTaries": "",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 31 octobre 2026",
+          "vlT": "",
+          "vlTaries": "",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 novembre 2026",
+          "vlT": "",
+          "vlTaries": "",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 30 novembre 2026",
+          "vlT": "",
+          "vlTaries": "",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 décembre 2026",
+          "vlT": "",
+          "vlTaries": "",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 31 décembre 2026",
+          "vlT": "",
+          "vlTaries": "",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 janvier 2027",
+          "vlT": "",
+          "vlTaries": "",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 31 janvier 2027",
+          "vlT": "",
+          "vlTaries": "",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 14 février 2027",
+          "vlT": "",
+          "vlTaries": "",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 28 février 2027",
+          "vlT": "",
+          "vlTaries": "",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "01 - 15 mars 2027",
+          "vlT": "",
+          "vlTaries": "",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        },
+        {
+          "periode": "16 - 31 mars 2027",
+          "vlT": "",
+          "vlTaries": "",
+          "pensionT": "",
+          "pensionTaries": "",
+          "ration": "",
+          "concentre": ""
+        }
+      ],
+      "dates": [
+        {
+          "label": "Mise à l'herbe VL",
+          "value": "20/4/2026",
+          "hl": true
+        },
+        {
+          "label": "Démontagnée (<1500m d'altitude)",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Arrêt du foin VL au printemps",
+          "value": "30/05/2026",
+          "hl": true
+        },
+        {
+          "label": "Stocks concentrés démontagnée",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Stocks sortie complète vaches (foin concentrés)",
+          "value": "vl=0 ",
+          "hl": true
+        },
+        {
+          "label": "Début distribution foin VL à l'automne",
+          "value": "",
+          "hl": true
+        },
+        {
+          "label": "Mise à l'herbe génisses",
+          "value": "17/04/2026",
+          "hl": true
+        },
+        {
+          "label": "Stocks rentrée vaches (concentrés)",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Mise à l'herbe autres espèces",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Rentrée étable VL",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Emmontagnée (>1500m d'altitude)",
+          "value": "8/06/2026",
+          "hl": false
+        },
+        {
+          "label": "Rentrée étable génisses",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Stocks concentrés Emmontagnée",
+          "value": "",
+          "hl": false
+        },
+        {
+          "label": "Rentrée étable autres espèces",
+          "value": "",
+          "hl": false
+        }
+      ],
+      "lait": [
+        {
+          "mois": "Avril",
+          "annee": 2026,
+          "litres": "9515"
+        },
+        {
+          "mois": "Mai",
+          "annee": 2026,
+          "litres": "9331"
+        },
+        {
+          "mois": "Juin",
+          "annee": 2026,
+          "litres": "11596"
+        },
+        {
+          "mois": "Juillet",
+          "annee": 2026,
+          "litres": "9471"
+        },
+        {
+          "mois": "Août",
+          "annee": 2026,
+          "litres": ""
+        },
+        {
+          "mois": "Septembre",
+          "annee": 2026,
+          "litres": ""
+        },
+        {
+          "mois": "Octobre",
+          "annee": 2026,
+          "litres": ""
+        },
+        {
+          "mois": "Novembre",
+          "annee": 2026,
+          "litres": ""
+        },
+        {
+          "mois": "Décembre",
+          "annee": 2026,
+          "litres": ""
+        },
+        {
+          "mois": "Janvier",
+          "annee": 2027,
+          "litres": ""
+        },
+        {
+          "mois": "Février",
+          "annee": 2027,
+          "litres": ""
+        },
+        {
+          "mois": "Mars",
+          "annee": 2027,
+          "litres": ""
+        }
+      ],
+      "_updatedAt": 1785770099975
+    },
+    "name": "Calendrier d'Alimentation Beaufort",
+    "short_name": "Beaufort",
+    "description": "Calendrier d'alimentation pour éleveurs Beaufort",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#f7f5f0",
+    "theme_color": "#2e7d45",
+    "lang": "fr",
+    "icons": [
+      {
+        "src": "./icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "./icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ],
+    "categories": [
+      "productivity",
+      "agriculture"
+    ]
+  }
 }
