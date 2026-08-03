@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "savedAt": "2026-08-03T15:25:04.195Z",
+  "savedAt": "2026-08-03T15:25:38.930Z",
   "campagnes": {
     "2024": {
       "periodes": [
@@ -1063,7 +1063,7 @@
           "litres": ""
         }
       ],
-      "_updatedAt": 1785770099975
+      "_updatedAt": 1785770735606
     },
     "name": "Calendrier d'Alimentation Beaufort",
     "short_name": "Beaufort",
