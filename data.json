@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "savedAt": "2026-08-30T10:57:37.989Z",
+  "savedAt": "2026-08-30T10:57:44.427Z",
   "campagnes": {
     "2024": {
       "periodes": [
@@ -804,7 +804,7 @@
         },
         {
           "periode": "01 - 15 septembre 2026",
-          "vlT": "",
+          "vlT": "19",
           "vlTaries": "",
           "pensionT": "",
           "pensionTaries": "",
@@ -1063,7 +1063,7 @@
           "litres": ""
         }
       ],
-      "_updatedAt": 1788087454974
+      "_updatedAt": 1788087460863
     },
     "name": "Calendrier d'Alimentation Beaufort",
     "short_name": "Beaufort",
