@@ -954,9 +954,26 @@ function renderLait(lait, periodes, campagne) {
 
 function renderComparaisonCivile(campagne) {
   const now = new Date();
-  const curMonth = now.getMonth() + 1; // 1=janvier … 12=décembre
   const curYear = now.getFullYear();
   const MOIS_CIVIL_LABEL = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
+
+  // On s'arrête au dernier mois réellement saisi pour l'année en cours (pas au
+  // mois calendaire réel, qui peut être en cours ou pas encore renseigné).
+  function lastMonthWithData(y) {
+    let last = 0;
+    for (let m = 1; m <= 12; m++) {
+      if (civilMonthLitres(y, m) > 0) last = m;
+    }
+    return last;
+  }
+  const curMonth = lastMonthWithData(curYear);
+
+  if (curMonth === 0) {
+    return `<div style="text-align:center;padding:40px;color:#7a6f60;font-size:13px;">
+      Aucune donnée de lait saisie pour ${curYear}. Renseignez au moins un mois dans l'onglet Lait pour voir la comparaison à date.
+    </div>`;
+  }
+
   const cutoffLabel = curMonth === 12 ? 'toute l\'année' : `du 1er janvier au 31 ${MOIS_CIVIL_LABEL[curMonth-1].toLowerCase()}`;
 
   const years = [...new Set([...CAMPAGNES, ...CAMPAGNES.map(y=>y+1)])].sort((a,b)=>a-b);
