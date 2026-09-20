@@ -150,6 +150,90 @@ function getSeason(p) {
   return 'lait_ete';
 }
 
+// Petit encart "▲/▼ vs période précédente", réutilisé par les onglets Lait et Année civile.
+function evolutionBox(prevLabel, currLabel, prevVal, currVal, unit) {
+  if (prevVal === null || currVal === null) {
+    return `<div style="display:flex;align-items:center;gap:10px;background:#f4f1eb;border:1px solid #e2ddd5;border-radius:10px;padding:10px 16px;margin-top:12px;">
+      <span style="font-size:22px;">➖</span>
+      <div style="font-size:12px;color:#7a6f60;">Pas assez de données pour comparer ${currLabel} à ${prevLabel}.</div>
+    </div>`;
+  }
+  const diff = currVal - prevVal;
+  const pct = prevVal ? ((diff/prevVal)*100).toFixed(1) : '—';
+  const up = diff >= 0;
+  return `<div style="display:flex;align-items:center;gap:10px;background:${up?'#e8f5ec':'#fff1ec'};border:1px solid ${up?'#2e7d4555':'#c2410c55'};border-radius:10px;padding:10px 16px;margin-top:12px;">
+    <span style="font-size:22px;">${up?'📈':'📉'}</span>
+    <div>
+      <div style="font-size:12px;font-weight:700;color:${up?'#1a5c2a':'#9a3412'};">
+        ${up?'+':''}${diff.toLocaleString('fr-FR')} ${unit} vs ${prevLabel} (${pct}${pct!=='—'?'%':''})
+      </div>
+      <div style="font-size:11px;color:#7a6f60;margin-top:2px;">${prevLabel} : ${prevVal.toLocaleString('fr-FR')} ${unit} → ${currLabel} : ${currVal.toLocaleString('fr-FR')} ${unit}</div>
+    </div>
+  </div>`;
+}
+
+function buildYearBarChart(data, highlightYr, activeColor, inactiveColor, labelFor) {
+  if (data.length < 2) return `<div style="text-align:center;padding:30px;color:#7a6f60;font-size:13px;">Renseignez au moins 2 années pour voir la comparaison</div>`;
+  const maxV = Math.max(...data.map(d=>d.val));
+  const svgW = data.length * 80 + 60;
+  const svgH = 130;
+  const bars = data.map((d,i) => {
+    const bH = Math.round((d.val / maxV) * 90);
+    const x = 40 + i * 80;
+    const isThis = d.yr === highlightYr;
+    const col = isThis ? activeColor : inactiveColor;
+    return `<g>
+      <rect x="${x}" y="${svgH-30-bH}" width="50" height="${bH}" fill="${col}" rx="5" opacity="${isThis?1:0.7}"/>
+      <text x="${x+25}" y="${svgH-32-bH}" text-anchor="middle" fill="${col}" font-size="9" font-weight="bold" font-family="sans-serif">${d.val.toLocaleString('fr-FR')}</text>
+      <text x="${x+25}" y="${svgH-12}" text-anchor="middle" fill="${isThis?'#1a5c2a':'#7a6f60'}" font-size="8.5" font-weight="${isThis?700:400}" font-family="sans-serif">${labelFor(d.yr)}</text>
+      ${isThis?`<rect x="${x-2}" y="${svgH-30-bH-4}" width="54" height="${bH+8}" fill="none" stroke="${activeColor}" stroke-width="2" rx="6" stroke-dasharray="4,2"/>`:''}
+    </g>`;
+  }).join('');
+  const gridVal = [0, Math.round(maxV/2), maxV];
+  const gridLines = gridVal.map(v=>`
+    <line x1="35" y1="${svgH-30-(v/maxV)*90}" x2="${svgW}" y2="${svgH-30-(v/maxV)*90}" stroke="#e2ddd5" stroke-width="1"/>
+    <text x="32" y="${svgH-28-(v/maxV)*90}" text-anchor="end" fill="#7a6f60" font-size="7.5" font-family="sans-serif">${v>0?Math.round(v/1000)+'k':0}</text>`).join('');
+  return `<svg viewBox="0 0 ${svgW} ${svgH}" style="width:100%;min-width:${svgW}px;height:${svgH}px;">${gridLines}${bars}</svg>`;
+}
+
+// ─── État civil (janvier → décembre) reconstitué à partir de 2 campagnes ─────
+// Une campagne (avril N → mars N+1) chevauche deux années civiles : les mois
+// avril-décembre appartiennent à l'année civile N, janvier-mars à N+1.
+const MOIS_CIVIL = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+
+// calMonth : 1=janvier … 12=décembre
+function civilMonthLitres(y, calMonth) {
+  const campYr = calMonth <= 3 ? y - 1 : y;
+  const idx = calMonth <= 3 ? 8 + calMonth : calMonth - 4;
+  const camp = state.allData[campYr];
+  const v = camp && camp.lait ? parseFloat(camp.lait[idx]?.litres) : NaN;
+  return isNaN(v) ? null : v;
+}
+
+function civilMonthVLValues(y, calMonth) {
+  const campYr = calMonth <= 3 ? y - 1 : y;
+  const camp = state.allData[campYr];
+  if (!camp || !camp.periodes) return [];
+  const nom = MOIS_CIVIL[calMonth-1].normalize('NFD').replace(/[̀-ͯ]/g,'');
+  return camp.periodes.filter(r => {
+    const p = r.periode.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+    return p.includes(nom);
+  }).map(r=>(parseFloat(r.vlT)||0)+(parseFloat(r.vlTaries)||0)).filter(v=>v>0);
+}
+
+// Total + L/vache de l'année civile y, cumulés de janvier au mois cutoffMonth inclus.
+function calcCivilToDate(y, cutoffMonth) {
+  let total = 0, has = false, vlAll = [];
+  for (let m = 1; m <= cutoffMonth; m++) {
+    const v = civilMonthLitres(y, m);
+    if (v !== null && v > 0) { total += v; has = true; }
+    vlAll = vlAll.concat(civilMonthVLValues(y, m));
+  }
+  if (!has) return { total: null, lvache: null };
+  const lvache = vlAll.length ? Math.round(total / (vlAll.reduce((a,b)=>a+b,0)/vlAll.length)) : null;
+  return { total: Math.round(total), lvache };
+}
+
 // ─── State ───────────────────────────────────────────────────────────────────
 
 let state = {
@@ -462,7 +546,7 @@ function render() {
 
     <!-- TABS -->
     <nav class="no-print" style="background:#fff;border-bottom:1px solid #e2ddd5;display:flex;padding-left:20px;align-items:stretch;">
-      ${[{id:'calendrier',icon:'📋',label:'Calendrier'},{id:'troupeau',icon:'🗓',label:'Dates troupeau'},{id:'lait',icon:'🥛',label:'Lait'},{id:'graphique',icon:'📊',label:'Graphique'}].map(t=>`
+      ${[{id:'calendrier',icon:'📋',label:'Calendrier'},{id:'troupeau',icon:'🗓',label:'Dates troupeau'},{id:'lait',icon:'🥛',label:'Lait'},{id:'comparaison',icon:'📆',label:'Année civile'},{id:'graphique',icon:'📊',label:'Graphique'}].map(t=>`
       <button class="tab-btn ${tab===t.id?'active':''}" onclick="setState({tab:'${t.id}'})">
         <span>${t.icon}</span>${t.label}
       </button>`).join('')}
@@ -474,6 +558,7 @@ function render() {
       ${tab==='calendrier' ? renderCalendrier(data, filtered, filter) : ''}
       ${tab==='troupeau'   ? renderTroupeau(dates, campagne) : ''}
       ${tab==='lait'       ? renderLait(lait, data, campagne) : ''}
+      ${tab==='comparaison'? renderComparaisonCivile(campagne) : ''}
       ${tab==='graphique'  ? renderGraphique(data, filled, campagne) : ''}
 
     </main>
@@ -711,27 +796,6 @@ function renderLait(lait, periodes, campagne) {
     return `<svg viewBox="0 0 ${svgW2} ${svgH2}" style="width:100%;min-width:${svgW2}px;height:${svgH2}px;">${gridLines}${annBars}</svg>`;
   })();
 
-  function evolutionBox(prevLabel, currLabel, prevVal, currVal, unit) {
-    if (prevVal === null || currVal === null) {
-      return `<div style="display:flex;align-items:center;gap:10px;background:#f4f1eb;border:1px solid #e2ddd5;border-radius:10px;padding:10px 16px;margin-top:12px;">
-        <span style="font-size:22px;">➖</span>
-        <div style="font-size:12px;color:#7a6f60;">Pas assez de données pour comparer ${currLabel} à ${prevLabel}.</div>
-      </div>`;
-    }
-    const diff = currVal - prevVal;
-    const pct = prevVal ? ((diff/prevVal)*100).toFixed(1) : '—';
-    const up = diff >= 0;
-    return `<div style="display:flex;align-items:center;gap:10px;background:${up?'#e8f5ec':'#fff1ec'};border:1px solid ${up?'#2e7d4555':'#c2410c55'};border-radius:10px;padding:10px 16px;margin-top:12px;">
-      <span style="font-size:22px;">${up?'📈':'📉'}</span>
-      <div>
-        <div style="font-size:12px;font-weight:700;color:${up?'#1a5c2a':'#9a3412'};">
-          ${up?'+':''}${diff.toLocaleString('fr-FR')} ${unit} vs ${prevLabel} (${pct}${pct!=='—'?'%':''})
-        </div>
-        <div style="font-size:11px;color:#7a6f60;margin-top:2px;">${prevLabel} : ${prevVal.toLocaleString('fr-FR')} ${unit} → ${currLabel} : ${currVal.toLocaleString('fr-FR')} ${unit}</div>
-      </div>
-    </div>`;
-  }
-
   // vs campagne précédente (liée à la campagne actuellement affichée) : on ne
   // compare que les mois où la campagne affichée a déjà des litres saisis,
   // pour ne pas comparer une campagne en cours (partielle) à une campagne
@@ -768,58 +832,15 @@ function renderLait(lait, periodes, campagne) {
   // Une campagne (avril N → mars N+1) chevauche deux années civiles : les mois
   // avril-décembre appartiennent à l'année civile N, et janvier-mars à N+1.
   // L'année civile N = avril-décembre de la campagne N + janvier-mars de la campagne N-1.
-  function calcCivilTotal(y) {
-    let total = 0, has = false;
-    const campCur = state.allData[y];
-    if (campCur && campCur.lait) {
-      for (let i = 0; i <= 8; i++) {
-        const v = parseFloat(campCur.lait[i]?.litres);
-        if (v > 0) { total += v; has = true; }
-      }
-    }
-    const campPrev = state.allData[y-1];
-    if (campPrev && campPrev.lait) {
-      [9,10,11].forEach(i => {
-        const v = parseFloat(campPrev.lait[i]?.litres);
-        if (v > 0) { total += v; has = true; }
-      });
-    }
-    return has ? Math.round(total) : null;
-  }
-
   const civilYears = [...new Set([...CAMPAGNES, ...CAMPAGNES.map(y=>y+1)])].sort((a,b)=>a-b);
-  const civilData = civilYears.map(y => ({yr: y, val: calcCivilTotal(y)})).filter(d=>d.val!==null);
-  const maxCivil = civilData.length ? Math.max(...civilData.map(d=>d.val)) : 0;
-  const thisCivilVal = calcCivilTotal(campagne);
+  const civilData = civilYears.map(y => ({yr: y, val: calcCivilToDate(y, 12).total})).filter(d=>d.val!==null);
+  const thisCivilVal = calcCivilToDate(campagne, 12).total;
 
-  const civilChart = civilData.length < 2 ? `
-  <div style="text-align:center;padding:30px;color:#7a6f60;font-size:13px;">
-    Renseignez au moins 2 années civiles pour voir la comparaison
-  </div>` : (() => {
-    const svgW3 = civilData.length * 80 + 60;
-    const svgH3 = 130;
-    const civBars = civilData.map((d,i) => {
-      const bH = Math.round((d.val / maxCivil) * 90);
-      const x = 40 + i * 80;
-      const isThis = d.yr === campagne;
-      const col = isThis ? '#1d4ed8' : '#a8c5f0';
-      return `<g>
-        <rect x="${x}" y="${svgH3-30-bH}" width="50" height="${bH}" fill="${col}" rx="5" opacity="${isThis?1:0.7}"/>
-        <text x="${x+25}" y="${svgH3-32-bH}" text-anchor="middle" fill="${col}" font-size="9" font-weight="bold" font-family="sans-serif">${d.val.toLocaleString('fr-FR')}</text>
-        <text x="${x+25}" y="${svgH3-12}" text-anchor="middle" fill="${isThis?'#1e3a8a':'#7a6f60'}" font-size="8.5" font-weight="${isThis?700:400}" font-family="sans-serif">${d.yr}</text>
-        ${isThis?`<rect x="${x-2}" y="${svgH3-30-bH-4}" width="54" height="${bH+8}" fill="none" stroke="#1d4ed8" stroke-width="2" rx="6" stroke-dasharray="4,2"/>`:''}
-      </g>`;
-    }).join('');
-    const gridVal3 = [0, Math.round(maxCivil/2), maxCivil];
-    const gridLines3 = gridVal3.map(v=>`
-      <line x1="35" y1="${svgH3-30-(v/maxCivil)*90}" x2="${svgW3}" y2="${svgH3-30-(v/maxCivil)*90}" stroke="#e2ddd5" stroke-width="1"/>
-      <text x="32" y="${svgH3-28-(v/maxCivil)*90}" text-anchor="end" fill="#7a6f60" font-size="7.5" font-family="sans-serif">${v>0?Math.round(v/1000)+'k':0}</text>`).join('');
-    return `<svg viewBox="0 0 ${svgW3} ${svgH3}" style="width:100%;min-width:${svgW3}px;height:${svgH3}px;">${gridLines3}${civBars}</svg>`;
-  })();
+  const civilChart = buildYearBarChart(civilData, campagne, '#1d4ed8', '#a8c5f0', yr=>yr);
 
   const civilEvolutionHtml = evolutionBox(
     `année civile ${campagne-1}`, `année civile ${campagne}`,
-    calcCivilTotal(campagne-1), thisCivilVal, 'L (troupeau)'
+    calcCivilToDate(campagne-1, 12).total, thisCivilVal, 'L (troupeau)'
   );
 
   return `
@@ -928,6 +949,48 @@ function renderLait(lait, periodes, campagne) {
         </tbody>
       </table>
     </div>
+  </div>`;
+}
+
+function renderComparaisonCivile(campagne) {
+  const now = new Date();
+  const curMonth = now.getMonth() + 1; // 1=janvier … 12=décembre
+  const curYear = now.getFullYear();
+  const MOIS_CIVIL_LABEL = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
+  const cutoffLabel = curMonth === 12 ? 'toute l\'année' : `du 1er janvier au 31 ${MOIS_CIVIL_LABEL[curMonth-1].toLowerCase()}`;
+
+  const years = [...new Set([...CAMPAGNES, ...CAMPAGNES.map(y=>y+1)])].sort((a,b)=>a-b);
+  const results = years.map(y => ({ yr: y, ...calcCivilToDate(y, curMonth) }));
+
+  const totalData = results.filter(d=>d.total!==null).map(d=>({yr:d.yr, val:d.total}));
+  const lvacheData = results.filter(d=>d.lvache!==null).map(d=>({yr:d.yr, val:d.lvache}));
+
+  const curr = results.find(d=>d.yr===curYear) || {total:null, lvache:null};
+  const prev = results.find(d=>d.yr===curYear-1) || {total:null, lvache:null};
+
+  const totalChart = buildYearBarChart(totalData, curYear, '#1d4ed8', '#a8c5f0', yr=>yr);
+  const lvacheChart = buildYearBarChart(lvacheData, curYear, '#2e7d45', '#93c4a0', yr=>yr);
+
+  const totalEvolution = evolutionBox(`année civile ${curYear-1} (${cutoffLabel})`, `année civile ${curYear} (${cutoffLabel})`, prev.total, curr.total, 'L (troupeau)');
+  const lvacheEvolution = evolutionBox(`année civile ${curYear-1} (${cutoffLabel})`, `année civile ${curYear} (${cutoffLabel})`, prev.lvache, curr.lvache, 'L/vache');
+
+  return `
+  <div style="background:#eff6ff;border:1px solid #1d4ed844;border-left:4px solid #1d4ed8;border-radius:10px;padding:10px 16px;margin-bottom:20px;font-size:12px;color:#1d4ed8;font-weight:500;">
+    📆 Comparaison année civile à date — ${cutoffLabel} ${curYear} vs ${curYear-1}
+  </div>
+
+  <div style="background:#fff;border-radius:14px;border:1px solid #e2ddd5;padding:20px;margin-bottom:20px;box-shadow:0 2px 10px #00000008;">
+    <div style="font-size:11px;color:#7a6f60;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;">🥛 Litres troupeau — ${cutoffLabel}</div>
+    <div style="font-size:11px;color:#7a6f60;margin-bottom:16px;">Chaque année n'inclut que les mois de janvier à ${MOIS_CIVIL_LABEL[curMonth-1].toLowerCase()}, pour une comparaison équitable. Année en cours encadrée en pointillé bleu.</div>
+    <div style="overflow-x:auto;">${totalChart}</div>
+    ${totalEvolution}
+  </div>
+
+  <div style="background:#fff;border-radius:14px;border:1px solid #e2ddd5;padding:20px;margin-bottom:20px;box-shadow:0 2px 10px #00000008;">
+    <div style="font-size:11px;color:#7a6f60;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;">🐄 L / vache — ${cutoffLabel}</div>
+    <div style="font-size:11px;color:#7a6f60;margin-bottom:16px;">Litres troupeau ${cutoffLabel} ÷ moyenne VL Traites sur la même période.</div>
+    <div style="overflow-x:auto;">${lvacheChart}</div>
+    ${lvacheEvolution}
   </div>`;
 }
 
