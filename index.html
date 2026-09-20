@@ -732,10 +732,36 @@ function renderLait(lait, periodes, campagne) {
     </div>`;
   }
 
-  // vs campagne précédente (liée à la campagne actuellement affichée)
+  // vs campagne précédente (liée à la campagne actuellement affichée) : on ne
+  // compare que les mois où la campagne affichée a déjà des litres saisis,
+  // pour ne pas comparer une campagne en cours (partielle) à une campagne
+  // précédente complète sur 12 mois.
+  const moisCommuns = lait.map((r,i)=>i).filter(i=>(parseFloat(lait[i].litres)||0)>0);
+
+  function calcLVachePourMois(yr, moisIndices) {
+    if (!moisIndices.length) return null;
+    const camp = state.allData[yr];
+    if (!camp) return null;
+    const laitData = camp.lait || makeLait(yr);
+    const periodesData = camp.periodes || makePeriodes(yr);
+    const total = moisIndices.reduce((s,i)=>s+(parseFloat(laitData[i]?.litres)||0),0);
+    if (!total) return null;
+    const noms = moisIndices.map(i=>MOIS_IDX[i]);
+    const vlVals = periodesData.filter(r => {
+      const p = r.periode.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+      return noms.some(m=>p.includes(m));
+    }).map(r=>(parseFloat(r.vlT)||0)+(parseFloat(r.vlTaries)||0)).filter(v=>v>0);
+    if (!vlVals.length) return null;
+    const avgVL = vlVals.reduce((a,b)=>a+b,0)/vlVals.length;
+    return Math.round(total / avgVL);
+  }
+
+  const nbMoisCommuns = moisCommuns.length;
+  const memeMoisSuffix = nbMoisCommuns && nbMoisCommuns < 12 ? ` (${nbMoisCommuns} mois communs)` : '';
   const evolutionHtml = evolutionBox(
-    `campagne ${campagne-1}–${campagne}`, `campagne ${campagne}–${campagne+1}`,
-    calcLVacheAn(campagne-1), thisCampVal, 'L/vache/an'
+    `campagne ${campagne-1}–${campagne}${memeMoisSuffix}`, `campagne ${campagne}–${campagne+1}${memeMoisSuffix}`,
+    calcLVachePourMois(campagne-1, moisCommuns), calcLVachePourMois(campagne, moisCommuns),
+    nbMoisCommuns < 12 ? 'L/vache' : 'L/vache/an'
   );
 
   // ── Comparaison par année civile (janvier → décembre) ──
