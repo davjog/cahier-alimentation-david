@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "savedAt": "2026-09-30T16:53:40.998Z",
+  "savedAt": "2026-09-30T16:54:46.794Z",
   "campagnes": {
     "2024": {
       "periodes": [
@@ -1030,7 +1030,7 @@
         {
           "mois": "Septembre",
           "annee": 2026,
-          "litres": "7735"
+          "litres": "7715"
         },
         {
           "mois": "Octobre",
@@ -1063,7 +1063,7 @@
           "litres": ""
         }
       ],
-      "_updatedAt": 1790787218105
+      "_updatedAt": 1790787283130
     },
     "name": "Calendrier d'Alimentation Beaufort",
     "short_name": "Beaufort",
