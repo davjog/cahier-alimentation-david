@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "savedAt": "2026-10-26T07:11:32.157Z",
+  "savedAt": "2026-10-26T07:11:50.142Z",
   "campagnes": {
     "2024": {
       "periodes": [
@@ -967,7 +967,7 @@
         },
         {
           "label": "Stocks rentrée vaches (concentrés)",
-          "value": "",
+          "value": "100kg",
           "hl": false
         },
         {
@@ -1063,7 +1063,7 @@
           "litres": ""
         }
       ],
-      "_updatedAt": 1792998688853
+      "_updatedAt": 1792998706757
     },
     "name": "Calendrier d'Alimentation Beaufort",
     "short_name": "Beaufort",
