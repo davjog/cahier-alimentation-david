@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "savedAt": "2026-10-26T07:10:49.701Z",
+  "savedAt": "2026-10-26T07:11:13.278Z",
   "campagnes": {
     "2024": {
       "periodes": [
@@ -957,7 +957,7 @@
         },
         {
           "label": "Début distribution foin VL à l'automne",
-          "value": "",
+          "value": "24",
           "hl": true
         },
         {
@@ -1063,7 +1063,7 @@
           "litres": ""
         }
       ],
-      "_updatedAt": 1792998646353
+      "_updatedAt": 1792998669943
     },
     "name": "Calendrier d'Alimentation Beaufort",
     "short_name": "Beaufort",
