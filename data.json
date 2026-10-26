@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "savedAt": "2026-10-26T07:10:29.611Z",
+  "savedAt": "2026-10-26T07:10:35.698Z",
   "campagnes": {
     "2024": {
       "periodes": [
@@ -977,7 +977,7 @@
         },
         {
           "label": "Rentrée étable VL",
-          "value": "24",
+          "value": "24/0",
           "hl": false
         },
         {
@@ -1063,7 +1063,7 @@
           "litres": ""
         }
       ],
-      "_updatedAt": 1792998625979
+      "_updatedAt": 1792998632368
     },
     "name": "Calendrier d'Alimentation Beaufort",
     "short_name": "Beaufort",
